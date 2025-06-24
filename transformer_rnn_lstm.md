@@ -60,18 +60,18 @@ donde:
 
 Los Transformers eliminan completamente la recurrencia y permiten el paralelismo total, basándose en mecanismos de atención.
 
-![Transformer](transformer.png)  
+![Transformer](figs/transformer.png)  
 *Fuente: Figura adaptada de [Attention is All You Need](https://arxiv.org/pdf/1706.03762)*
 
 ### 🔍 Atención Escalar de Producto
 
-Dado un conjunto de consultas \( Q \), claves \( K \) y valores \( V \), la atención se calcula como:
+Dado un conjunto de consultas $Q$, claves $K$ y valores $V$, la atención se calcula como:
 
-\[
+$$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-\]
+$$
 
-donde \( d_k \) es la dimensión de las claves.
+donde $d_k$ es la dimensión de las claves.
 
 ### ⚙️ Arquitectura General
 
@@ -79,7 +79,7 @@ donde \( d_k \) es la dimensión de las claves.
 - **Decodificador (Decoder):** Agrega atención enmascarada y conexiones con la salida del codificador.
 - **Positional Encoding:** Suma a los embeddings para incluir el orden secuencial.
 
-Los Transformers son la base de modelos modernos como BERT y GPT.
+Los Transformers son la base de modelos modernos de lenguaje como BERT y GPT.
 
 ---
 
