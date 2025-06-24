@@ -1,7 +1,7 @@
 
-# Modelado de Secuencias en PLN: De las RNN a los Transformers
+# Modelado de Secuencias: De las RNN a los Transformers
 
-Este documento presenta una introducción al modelado de secuencias mediante redes neuronales recurrentes (RNN), Long Short-Term Memory (LSTM) y Transformers, con aplicaciones en procesamiento de lenguaje natural (PLN).
+Este documento presenta una introducción al modelado de secuencias mediante redes neuronales recurrentes (RNN), Long Short-Term Memory (LSTM) y Transformers.
 
 ---
 
