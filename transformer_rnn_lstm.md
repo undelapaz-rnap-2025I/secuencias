@@ -22,11 +22,11 @@ y_t = W_{hy} h_t + b_y
 $$
 
 donde:
-- \( x_t \in \mathbb{R}^d \): entrada en el tiempo \( t \),
-- \( h_t \in \mathbb{R}^h \): estado oculto,
-- \( y_t \in \mathbb{R}^o \): salida,
-- \( W_{hx}, W_{hh}, W_{hy} \): matrices de pesos,
-- \( b_h, b_y \): vectores de sesgo.
+- $x_t \in \mathbb{R}^d$: entrada en el tiempo $t$,
+- $h_t \in \mathbb{R}^h$: estado oculto,
+- $y_t \in \mathbb{R}^o$: salida,
+- $W_{hx}, W_{hh}, W_{hy}$: matrices de pesos,
+- $b_h, b_y$: vectores de sesgo.
 
 ---
 
@@ -34,12 +34,12 @@ donde:
 
 Las celdas LSTM permiten preservar información durante lapsos de tiempo largos, mitigando los problemas de las RNN estándar.
 
-![LSTM](lstm.png)  
+![LSTM](figs/lstm.png)  
 *Fuente: Figura adaptada de [MDPI Information](https://www.mdpi.com/2078-2489/15/9/517)*
 
 ### 🔣 Ecuaciones de la celda LSTM
 
-\[
+$$
 \begin{aligned}
 f_t &= \sigma(W_f x_t + U_f h_{t-1} + b_f) \\
 i_t &= \sigma(W_i x_t + U_i h_{t-1} + b_i) \\
@@ -48,11 +48,11 @@ c_t &= f_t \odot c_{t-1} + i_t \odot \tilde{c}_t \\
 o_t &= \sigma(W_o x_t + U_o h_{t-1} + b_o) \\
 h_t &= o_t \odot \tanh(c_t)
 \end{aligned}
-\]
+$$
 
 donde:
-- \( \sigma \): función sigmoide,
-- \( \odot \): producto elemento a elemento.
+- $\sigma$: función sigmoide,
+- $\odot$: producto elemento a elemento.
 
 ---
 
